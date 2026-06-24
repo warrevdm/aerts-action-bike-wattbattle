@@ -12,11 +12,22 @@
         <section class="input-card">
             <img src="assets/Aerts2015CMYK-blackletters.svg" alt="Aerts Action Bike" class="input-logo">
 
-<div class="brand-label">Live challenge</div>
-<h1>Watt Battle</h1>
-<p class="subtitle">Vul de deelnemer en het hoogste wattage in.</p>
+            <div class="brand-label">Live challenge</div>
+            <h1>Watt Battle</h1>
+            <p class="subtitle">Vul de deelnemer, competitie en het hoogste wattage in.</p>
+
+            <?php if (isset($_GET["success"])): ?>
+                <div class="success-message">Score toegevoegd. Klaar voor de volgende poging.</div>
+            <?php endif; ?>
 
             <form action="submit.php" method="POST" class="score-form">
+                <label for="competition">Competitie</label>
+                <select id="competition" name="competition" required>
+                    <option value="men">Mannen competitie</option>
+                    <option value="women">Vrouwen competitie</option>
+                    <option value="kids">Kinderen competitie</option>
+                </select>
+
                 <label for="name">Naam deelnemer</label>
                 <input 
                     type="text" 
