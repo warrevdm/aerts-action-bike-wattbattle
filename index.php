@@ -14,7 +14,7 @@
 
             <div class="brand-label">Live challenge</div>
             <h1>Watt Battle</h1>
-            <p class="subtitle">Vul de deelnemer, competitie en het hoogste wattage in.</p>
+            <p class="subtitle">Vul de deelnemer, e-mail, competitie en het hoogste wattage in.</p>
 
             <?php if (isset($_GET["success"])): ?>
                 <div class="success-message">Score toegevoegd. Klaar voor de volgende poging.</div>
@@ -38,6 +38,16 @@
                     required
                 >
 
+                <label for="email">E-mailadres</label>
+                <input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    placeholder="Bijv. naam@email.be" 
+                    maxlength="150"
+                    required
+                >
+
                 <label for="wattage">Wattage</label>
                 <input 
                     type="number" 
@@ -48,6 +58,20 @@
                     max="3000"
                     required
                 >
+
+                <label class="checkbox-row" for="newsletter_optin">
+                    <input 
+                        type="checkbox" 
+                        id="newsletter_optin" 
+                        name="newsletter_optin" 
+                        value="1"
+                    >
+                    <span>Ja, ik wil nieuws, acties en updates van Aerts Action Bike ontvangen.</span>
+                </label>
+
+                <p class="privacy-note">
+                    Je e-mailadres wordt gebruikt om je deelname te koppelen aan je score. Nieuwsbrieven sturen we enkel wanneer je dit hierboven aanvinkt.
+                </p>
 
                 <button type="submit">Score toevoegen</button>
             </form>
