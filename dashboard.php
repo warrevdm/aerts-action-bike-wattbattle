@@ -103,8 +103,7 @@
                 <div class="benchmark-intro">
                     <div class="brand-label">Pro benchmark</div>
                     <h2>Belgische profs</h2>
-                    <p>Indicatieve piekwattages als leuke vergelijking voor het publiek. Dit zijn geen officiële testwaarden.</p>
-                </div>
+                    </div>
 
                 <div id="pro-benchmarks" class="pro-grid"></div>
             </section>
@@ -235,7 +234,7 @@
     renderProBenchmarks();
     loadScores();
     setInterval(loadScores, 2000);
-    setInterval(nextSlide, 8000);
+    setInterval(nextSlide, 15000);
     </script>
 
 </body>
