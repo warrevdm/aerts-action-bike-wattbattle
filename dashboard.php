@@ -121,7 +121,6 @@
         </footer>
     </main>
 
-    <script src="assets/pro-photos.js"></script>
     <script>
     const slideOrder = ["men", "women", "kids", "pros"];
     const slideLabels = {
@@ -131,14 +130,12 @@
         pros: "Belgische profs - benchmark"
     };
 
-    const proPhotos = window.proPhotos || {};
-
     const proBenchmarks = [
-        { key: "jasperPhilipsen", name: "Jasper Philipsen", type: "Topsprinter", watts: "1.500-1.700 W", note: "Referentie voor een pure massasprint." },
-        { key: "timMerlier", name: "Tim Merlier", type: "Topsprinter", watts: "1.500-1.700 W", note: "Explosieve sprintpower als richtpunt." },
-        { key: "woutVanAert", name: "Wout van Aert", type: "Allrounder / sprint", watts: "1.400-1.600 W", note: "Bekend om sprint, tijdrit en klimvermogen." },
-        { key: "remcoEvenepoel", name: "Remco Evenepoel", type: "Tijdrit / klim", watts: "1.100-1.300 W", note: "Niet de pure sprinter, wel uitzonderlijk duurvermogen." },
-        { key: "lotteKopecky", name: "Lotte Kopecky", type: "Punch / sprint", watts: "900-1.100 W", note: "Sterke referentie voor explosieve vrouwenpower." }
+        { image: "assets/pros/jasper.jpg", name: "Jasper Philipsen", type: "Topsprinter", watts: "1.500-1.700 W", note: "Referentie voor een pure massasprint." },
+        { image: "assets/pros/tim.jpg", name: "Tim Merlier", type: "Topsprinter", watts: "1.500-1.700 W", note: "Explosieve sprintpower als richtpunt." },
+        { image: "assets/pros/wout.jpg", name: "Wout van Aert", type: "Allrounder / sprint", watts: "1.400-1.600 W", note: "Bekend om sprint, tijdrit en klimvermogen." },
+        { image: "assets/pros/remco.jpg", name: "Remco Evenepoel", type: "Tijdrit / klim", watts: "1.100-1.300 W", note: "Niet de pure sprinter, wel uitzonderlijk duurvermogen." },
+        { image: "assets/pros/lotte.jpg", name: "Lotte Kopecky", type: "Punch / sprint", watts: "900-1.100 W", note: "Sterke referentie voor explosieve vrouwenpower." }
     ];
 
     let previousData = "";
@@ -203,24 +200,17 @@
     function renderProBenchmarks() {
         const grid = document.getElementById("pro-benchmarks");
 
-        grid.innerHTML = proBenchmarks.map(pro => {
-            const image = proPhotos[pro.key] || "";
-            const photoHtml = image
-                ? `<img src="${image}" alt="${pro.name}" class="pro-photo">`
-                : `<div class="pro-photo pro-photo-fallback">${pro.name}</div>`;
-
-            return `
-                <article class="pro-card">
-                    ${photoHtml}
-                    <div class="pro-overlay">
-                        <span>${pro.type}</span>
-                        <h3>${pro.name}</h3>
-                        <strong>${pro.watts}</strong>
-                        <p>${pro.note}</p>
-                    </div>
-                </article>
-            `;
-        }).join("");
+        grid.innerHTML = proBenchmarks.map(pro => `
+            <article class="pro-card">
+                <img src="${pro.image}" alt="${pro.name}" class="pro-photo">
+                <div class="pro-overlay">
+                    <span>${pro.type}</span>
+                    <h3>${pro.name}</h3>
+                    <strong>${pro.watts}</strong>
+                    <p>${pro.note}</p>
+                </div>
+            </article>
+        `).join("");
     }
 
     function showSlide(index) {
