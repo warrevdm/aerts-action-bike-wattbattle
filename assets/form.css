@@ -1,0 +1,36 @@
+.checkbox-row {
+    display: grid;
+    grid-template-columns: 26px 1fr;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 16px;
+    border: 1px solid rgba(255, 255, 255, 0.14);
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.05);
+    cursor: pointer;
+    text-transform: none;
+    letter-spacing: 0;
+}
+
+.checkbox-row input[type="checkbox"] {
+    width: 22px;
+    height: 22px;
+    margin: 1px 0 0;
+    padding: 0;
+    accent-color: var(--aerts-green);
+}
+
+.checkbox-row span {
+    color: rgba(255, 255, 255, 0.82);
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.privacy-note {
+    margin: -2px 0 0;
+    color: rgba(255, 255, 255, 0.54);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 1.25;
+}
