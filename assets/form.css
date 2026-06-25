@@ -34,3 +34,105 @@
     font-weight: 600;
     line-height: 1.25;
 }
+
+.input-wrapper {
+    align-items: start;
+    gap: 22px;
+}
+
+.concept-card {
+    width: 100%;
+    max-width: 980px;
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    gap: 0;
+    overflow: hidden;
+    margin-bottom: 24px;
+    border: 1px solid var(--aerts-border);
+    border-radius: 34px;
+    background: rgba(0, 0, 0, 0.88);
+    box-shadow: 0 28px 90px rgba(0, 0, 0, 0.62);
+}
+
+.concept-video-wrap {
+    position: relative;
+    min-height: 340px;
+    background: #000000;
+}
+
+.concept-video {
+    width: 100%;
+    height: 100%;
+    min-height: 340px;
+    object-fit: cover;
+    display: block;
+}
+
+.concept-content {
+    padding: 34px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.concept-content h2 {
+    margin: 0;
+    font-size: clamp(48px, 7vw, 86px);
+    line-height: 0.88;
+    font-weight: 950;
+    text-transform: uppercase;
+    letter-spacing: -0.06em;
+}
+
+.concept-content p {
+    margin: 16px 0 0;
+    color: rgba(255, 255, 255, 0.76);
+    font-size: 22px;
+    line-height: 1.16;
+    font-weight: 700;
+}
+
+.concept-steps {
+    display: grid;
+    gap: 10px;
+    margin-top: 22px;
+}
+
+.concept-steps div {
+    display: grid;
+    grid-template-columns: 58px 1fr;
+    align-items: center;
+    gap: 12px;
+    padding: 14px 16px;
+    border-radius: 18px;
+    background: rgba(255, 255, 255, 0.06);
+    border: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.concept-steps strong {
+    color: var(--aerts-green);
+    font-size: 24px;
+    font-weight: 950;
+}
+
+.concept-steps span {
+    color: #ffffff;
+    font-size: 19px;
+    font-weight: 850;
+}
+
+.concept-note {
+    color: rgba(255, 255, 255, 0.58) !important;
+    font-size: 17px !important;
+}
+
+@media (max-width: 860px) {
+    .concept-card {
+        grid-template-columns: 1fr;
+    }
+
+    .concept-video-wrap,
+    .concept-video {
+        min-height: 220px;
+    }
+}

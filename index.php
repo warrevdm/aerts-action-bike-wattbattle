@@ -10,6 +10,46 @@
 <body class="input-page">
 
     <main class="input-wrapper">
+        <section class="concept-card">
+    <div class="concept-video-wrap">
+        <video 
+            class="concept-video" 
+            autoplay 
+            muted 
+            loop 
+            playsinline
+        >
+            <source src="assets/wattbattle-concept.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="concept-content">
+        <div class="brand-label">Aerts Action Bike Event</div>
+        <h2>Watt Battle</h2>
+        <p>
+            Stap op de fiets, trap alles uit je benen en zet jouw hoogste piekwattage op het live scorebord.
+        </p>
+
+        <div class="concept-steps">
+            <div>
+                <strong>01</strong>
+                <span>Kies je categorie</span>
+            </div>
+            <div>
+                <strong>02</strong>
+                <span>Trap je piekwattage</span>
+            </div>
+            <div>
+                <strong>03</strong>
+                <span>Bekijk je ranking live</span>
+            </div>
+        </div>
+
+        <p class="concept-note">
+            Mannen, vrouwen en jeugd strijden elk voor hun eigen ranking. Vergelijk je score met Belgische profs op het live dashboard.
+        </p>
+    </div>
+</section>
         <section class="input-card">
             <img src="assets/Aerts2015CMYK-blackletters.svg" alt="Aerts Action Bike" class="input-logo">
 
