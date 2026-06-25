@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/pro-benchmarks.css">
+    <link rel="stylesheet" href="assets/concept-slide.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,7 +27,45 @@
             <div class="live-pill">LIVE</div>
         </header>
 
-        <section class="slide scoreboard-slide is-active" data-slide="men">
+        <section class="slide concept-slide is-active" data-slide="concept">
+            <section class="concept-stage">
+                <div class="concept-media">
+                    <video class="concept-video" autoplay muted loop playsinline>
+                        <source src="assets/wattbattle-concept.mp4" type="video/mp4">
+                    </video>
+                    <div class="concept-video-fallback">Aerts Action Bike Watt Battle</div>
+                </div>
+
+                <div class="concept-copy">
+                    <div class="brand-label">Concept</div>
+                    <h2>Trap je hoogste piekwattage</h2>
+                    <p class="concept-lead">
+                        Stap op de fiets, geef 30 seconden alles en verschijn live op het grote Watt Battle-scorebord.
+                    </p>
+
+                    <div class="concept-steps">
+                        <div class="concept-step">
+                            <strong>01</strong>
+                            <span>Kies je categorie</span>
+                        </div>
+                        <div class="concept-step">
+                            <strong>02</strong>
+                            <span>Trap je maximale wattage</span>
+                        </div>
+                        <div class="concept-step">
+                            <strong>03</strong>
+                            <span>Bekijk je ranking live</span>
+                        </div>
+                    </div>
+
+                    <p class="concept-small">
+                        Mannen, vrouwen en jeugd krijgen elk een eigen klassement. Daarna vergelijken we met Belgische profs.
+                    </p>
+                </div>
+            </section>
+        </section>
+
+        <section class="slide scoreboard-slide" data-slide="men">
             <section class="winner-card">
                 <div class="winner-content">
                     <p class="winner-label">Mannen competitie</p>
@@ -103,16 +142,17 @@
                 <div class="benchmark-intro">
                     <div class="brand-label">Pro benchmark</div>
                     <h2>Belgische profs</h2>
-                    </div>
+                </div>
 
                 <div id="pro-benchmarks" class="pro-grid"></div>
             </section>
         </section>
 
         <footer class="dashboard-footer">
-            <div id="slide-title" class="slide-title">Mannen competitie</div>
+            <div id="slide-title" class="slide-title">Concept Watt Battle</div>
             <div class="slide-dots" aria-hidden="true">
-                <span class="dot is-active" data-dot="men"></span>
+                <span class="dot is-active" data-dot="concept"></span>
+                <span class="dot" data-dot="men"></span>
                 <span class="dot" data-dot="women"></span>
                 <span class="dot" data-dot="kids"></span>
                 <span class="dot" data-dot="pros"></span>
@@ -121,8 +161,9 @@
     </main>
 
     <script>
-    const slideOrder = ["men", "women", "kids", "pros"];
+    const slideOrder = ["concept", "men", "women", "kids", "pros"];
     const slideLabels = {
+        concept: "Concept Watt Battle",
         men: "Mannen competitie",
         women: "Vrouwen competitie",
         kids: "Jeugd competitie",
