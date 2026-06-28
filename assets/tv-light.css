@@ -1,0 +1,139 @@
+/* TV LIGHT MODE - beter leesbaar in zonlicht */
+
+.dashboard-page {
+    color: #050505;
+    background:
+        linear-gradient(90deg, rgba(94, 187, 73, 0.11) 1px, transparent 1px),
+        linear-gradient(rgba(94, 187, 73, 0.08) 1px, transparent 1px),
+        linear-gradient(135deg, #ffffff, #f3f6f2) !important;
+    background-size: 64px 64px, 64px 64px, auto !important;
+}
+
+.dashboard-page .dashboard {
+    color: #050505;
+}
+
+.dashboard-page .brand-label {
+    background: #e5f6df;
+    color: #2f7d24;
+    border: 2px solid rgba(47, 125, 36, 0.26);
+}
+
+.dashboard-page h1,
+.dashboard-page h2,
+.dashboard-page h3,
+.dashboard-page .name,
+.dashboard-page .slide-title {
+    color: #050505;
+    text-shadow: none;
+}
+
+.dashboard-page .brand-logo {
+    background: #ffffff;
+    border: 2px solid rgba(0, 0, 0, 0.12);
+    box-shadow: 0 10px 28px rgba(0, 0, 0, 0.14);
+}
+
+.dashboard-page .live-pill {
+    background: #5ebb49;
+    color: #000000;
+    border: 3px solid #000000;
+    box-shadow: none;
+}
+
+.dashboard-page .winner-card {
+    background: #ffffff !important;
+    color: #050505 !important;
+    border: 4px solid #5ebb49;
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.14);
+}
+
+.dashboard-page .winner-card::after {
+    background: rgba(94, 187, 73, 0.14);
+}
+
+.dashboard-page .winner-label,
+.dashboard-page .winner-subtitle,
+.dashboard-page .winner-side span {
+    color: #111111;
+    opacity: 1;
+}
+
+.dashboard-page .winner-wattage {
+    color: #2f7d24;
+}
+
+.dashboard-page .scoreboard,
+.dashboard-page .benchmark-card {
+    background: #ffffff !important;
+    border: 3px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.13);
+}
+
+.dashboard-page .scoreboard-head {
+    background: #050505;
+    color: #ffffff;
+    border-bottom: 3px solid #5ebb49;
+}
+
+.dashboard-page .score-row {
+    color: #050505;
+    border-top: 2px solid rgba(0, 0, 0, 0.12);
+    background: #ffffff;
+}
+
+.dashboard-page .score-row.first {
+    background: #e5f6df !important;
+    border-left: 14px solid #5ebb49;
+}
+
+.dashboard-page .score-row.second {
+    background: #f0f0f0 !important;
+}
+
+.dashboard-page .score-row.third {
+    background: #f7fbf5 !important;
+}
+
+.dashboard-page .rank {
+    color: #2f7d24;
+}
+
+.dashboard-page .wattage {
+    color: #000000;
+}
+
+.dashboard-page .empty-state {
+    color: #333333;
+    background: #ffffff;
+}
+
+.dashboard-page .benchmark-intro p,
+.dashboard-page .pro-card p {
+    color: #222222;
+}
+
+.dashboard-page .pro-card {
+    background: #ffffff;
+    border: 3px solid rgba(0, 0, 0, 0.18);
+    box-shadow: 0 12px 32px rgba(0, 0, 0, 0.12);
+}
+
+.dashboard-page .pro-card span,
+.dashboard-page .pro-card strong {
+    color: #2f7d24;
+}
+
+.dashboard-page .slide-title {
+    color: #050505;
+}
+
+.dashboard-page .dot {
+    background: rgba(0, 0, 0, 0.24);
+}
+
+.dashboard-page .dot.is-active {
+    background: #5ebb49;
+    border: 2px solid #000000;
+    box-shadow: none;
+}
