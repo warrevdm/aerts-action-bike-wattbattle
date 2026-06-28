@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="assets/style.css">
     <link rel="stylesheet" href="assets/pro-benchmarks.css">
     <link rel="stylesheet" href="assets/concept-slide.css">
+    <link rel="stylesheet" href="assets/tv-light.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
