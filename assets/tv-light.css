@@ -41,6 +41,52 @@
     box-shadow: none;
 }
 
+.dashboard-page .concept-media,
+.dashboard-page .concept-copy {
+    background: #ffffff !important;
+    border: 4px solid rgba(0, 0, 0, 0.16) !important;
+    box-shadow: 0 16px 44px rgba(0, 0, 0, 0.14) !important;
+}
+
+.dashboard-page .concept-copy h2 {
+    color: #050505 !important;
+    text-shadow: none !important;
+}
+
+.dashboard-page .concept-lead {
+    color: #050505 !important;
+    font-weight: 900;
+}
+
+.dashboard-page .concept-small {
+    color: #202020 !important;
+    font-weight: 850;
+}
+
+.dashboard-page .concept-step {
+    background: #f4f8f1 !important;
+    border: 3px solid rgba(94, 187, 73, 0.42) !important;
+}
+
+.dashboard-page .concept-step strong {
+    color: #2f7d24 !important;
+}
+
+.dashboard-page .concept-step span {
+    color: #050505 !important;
+}
+
+.dashboard-page .concept-video-fallback {
+    color: #050505 !important;
+    background: #ffffff;
+}
+
+.dashboard-page .concept-media::after {
+    background:
+        linear-gradient(180deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.10)),
+        inset 0 0 0 4px rgba(94, 187, 73, 0.18) !important;
+}
+
 .dashboard-page .winner-card {
     background: #ffffff !important;
     color: #050505 !important;
